@@ -1,0 +1,101 @@
+@media only screen and (min-width: 992px) {
+    .play-icon {
+        top: 6px !important;
+    }
+}
+
+.custom-toolbar {
+    height: 220px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.menu-btn {
+    color: #FFFFFF !important;
+    float: left;
+}
+
+.menu-ion-title {
+    height: 100%;
+    text-align: center;
+}
+
+.span-play, .menu-notification-icon, .body-icon, .trophy-icon, .chips ion-label {
+    color: #f07d07 !important;
+}
+
+.menu-notification-icon {
+    background: #000000;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.notification-badge {
+    float: right;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: -18px;
+    color: var(--ion-color-success);
+}
+
+.menu-logo-div {
+	line-height: 11px;
+    font-family: system-ui;
+}
+
+.span-usina {
+	font-weight: bolder;
+    font-size: 15px;
+}
+.span-play {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.play-icon {
+	position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 16px;
+    margin-left: 10px;
+}
+
+.level-text {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.avatar {
+    height: 60px;
+    margin-right: 25px;
+}
+
+.profile-photo {
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.chips {
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    --background: #161616;
+    font-size: 11px;
+}
+
+.trophy-icon, .body-icon {
+    border-radius: 50%;
+    border: 1px solid #f07d07;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.trophy-icon {
+    margin-left: 10px;
+}
