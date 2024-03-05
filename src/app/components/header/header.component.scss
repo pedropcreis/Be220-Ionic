@@ -22,21 +22,22 @@
 }
 
 .span-play, .menu-notification-icon, .body-icon, .trophy-icon, .chips ion-label {
-    color: #f07d07 !important;
+    color: var(--orange-custom) !important;
+}
+
+.menu-notification-icon, .notification-badge {
+    float: right;
 }
 
 .menu-notification-icon {
     background: #000000;
-    float: right;
     margin-right: 10px;
     margin-top: 10px;
 }
 
 .notification-badge {
-    float: right;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
     margin-top: 7px;
     margin-right: -18px;
     color: var(--ion-color-success);
@@ -52,7 +53,6 @@
     font-size: 15px;
 }
 .span-play {
-    font-size: 11px;
     font-weight: bold;
 }
 
@@ -61,7 +61,6 @@
     height: 20px;
     width: 20px;
     top: 16px;
-    margin-left: 10px;
 }
 
 .level-text {
@@ -70,13 +69,15 @@
 }
 
 .avatar {
-    height: 60px;
     margin-right: 25px;
 }
 
 .profile-photo {
     max-width: 60px;
     width: 60px;
+}
+
+.profile-photo, .avatar {
     height: 60px;
 }
 
@@ -85,18 +86,24 @@
     margin-top: 20px;
     margin-right: auto;
     --background: #161616;
+}
+
+.span-play, .chips {
     font-size: 11px;
 }
 
-.trophy-icon, .body-icon {
+.trophy-icon, .body-icon, .notification-badge {
     border-radius: 50%;
-    border: 1px solid #f07d07;
+}
+
+.trophy-icon, .body-icon {
+    border: 1px solid var(--orange-custom);
     width: 15px;
     height: 15px;
     padding: 5px;
     margin-right: 5px;
 }
 
-.trophy-icon {
+.trophy-icon, .play-icon {
     margin-left: 10px;
 }

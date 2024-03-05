@@ -17,6 +17,7 @@
 
 .scroll-grid {
     margin-top: 30px;
+    padding: 0px 20px;
 }
 
 .overflow-title {
@@ -29,16 +30,43 @@
     align-items: center;
     justify-content: center;
     margin: 0px;
-    background: #000000c4;
+    background: #000000b3;
     font-weight: 400;
 }
 
 .add-icon {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     border: 2px solid #ffffff;
-    border-radius: 50%;
     margin-right: 10px;
+}
+
+.new-badge, .title-icon {
+    height: 15px;
+}
+
+.title-icon {
+    width: 15px;
+    border: 1px solid var(--orange-custom);
+}
+
+.add-icon, .title-icon {
+    border-radius: 50%;
+}
+
+.title-icon, .label1 {
+    color: var(--orange-custom);
+}
+
+.new-badge, .title-icon {
+    margin-left: 5px;
+}
+
+.new-badge {
+    --background: var(--orange-custom);
+    font-size: 8px;
+    padding: 0px 3px;
+    line-height: 15px;
 }
 
 .card-img {
@@ -50,4 +78,15 @@
 .muscle-card {
     max-height: 160px;
     border-radius: 20px;
+}
+
+.label1 {
+    margin: 0px;
+}
+
+.span-programs {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }

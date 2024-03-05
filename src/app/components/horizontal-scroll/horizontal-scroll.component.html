@@ -1,32 +1,19 @@
-<ion-grid class="scroll-grid">
+<ion-grid class="scroll-grid" *ngFor="let card of data">
   <ion-row>
-    {{ title }}
+    {{ card.title }}
+    <ion-icon *ngIf="!card.is_new && card.type != 'blog'" name="{{ card.icon }}" class="title-icon"></ion-icon>
+    <ion-badge *ngIf="card.is_new && card.type != 'blog'" class="new-badge">NOVO</ion-badge>
   </ion-row>
   <ion-row class="scroll">
-    <ion-col size="9">
+    <ion-col size="9" *ngFor="let option of card.options">
       <ion-card class="muscle-card">
-        <img alt="Silhouette of mountains" class="card-img" src="../../../assets/images/musculacao-01.webp" />
-          <h3 class="overflow-title">
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              NOVO<br/>TREINO
+        <img alt="Musculação" class="card-img" src="{{ option.image_url }}" />
+          <h3 class="overflow-title" *ngIf="card.type != 'programs'" [ngStyle]="{background: option.last_opened ? '#00000082' : '#000000b3'}">
+              <ion-icon *ngIf="card.type != 'blog'" name="{{ option.icon }}" class="add-icon"></ion-icon>
+              {{ option.label1 }}<br/>{{ option.label2 }}
           </h3>
-      </ion-card>
-    </ion-col>
-    <ion-col size="9">
-      <ion-card class="muscle-card">
-        <img alt="Silhouette of mountains" class="card-img" src="../../../assets/images/musculacao-01.webp" />
-          <h3 class="overflow-title">
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              NOVO<br/>TREINO
-          </h3>
-      </ion-card>
-    </ion-col>
-    <ion-col size="9">
-      <ion-card class="muscle-card">
-        <img alt="Silhouette of mountains" class="card-img" src="../../../assets/images/musculacao-01.webp" />
-          <h3 class="overflow-title">
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              NOVO<br/>TREINO
+          <h3 class="overflow-title" *ngIf="card.type == 'programs'" style="align-items: end; justify-content: start;">
+              <span class="span-programs"><p class="label1">{{ option.label1 }}</p>{{ option.label2 }}</span>
           </h3>
       </ion-card>
     </ion-col>

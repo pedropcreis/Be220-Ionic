@@ -5,7 +5,9 @@ export interface HomeGrid {
     type: string,
     options: Array<{
         image_url: string,
-        label: string,
+        last_opened: boolean,
+        label1: string,
+        label2: string,
         subtitle: string,
         icon: string,
     }>
