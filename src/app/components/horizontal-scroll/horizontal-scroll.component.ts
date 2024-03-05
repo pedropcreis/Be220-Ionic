@@ -17,7 +17,7 @@ export class HorizontalScrollComponent  implements OnInit {
     {
       title: 'PERSONAL ONLINE',
       is_new: false,
-      icon: 'add-outline',
+      icon: '../../../assets/icon/add-outline.svg',
       type: 'personal_online',
       options: [
         {
@@ -26,7 +26,7 @@ export class HorizontalScrollComponent  implements OnInit {
           label1: 'NOVO',
           label2: 'TREINO',
           subtitle: '',
-          icon: 'add-outline',
+          icon: '../../../assets/icon/add-outline.svg',
         },
         {
           image_url: 'https://firebasestorage.googleapis.com/v0/b/teste-c55e6.appspot.com/o/images%2Fmusculacao-01.webp?alt=media&token=7ea738c0-2e51-4fc2-83a6-4b0aa163b24a',
@@ -34,7 +34,7 @@ export class HorizontalScrollComponent  implements OnInit {
           label1: 'NOVO',
           label2: 'TREINO',
           subtitle: '',
-          icon: 'add-outline',
+          icon: '../../../assets/icon/add-outline.svg',
         },
         {
           image_url: 'https://firebasestorage.googleapis.com/v0/b/teste-c55e6.appspot.com/o/images%2Fmusculacao-01.webp?alt=media&token=7ea738c0-2e51-4fc2-83a6-4b0aa163b24a',
@@ -42,7 +42,7 @@ export class HorizontalScrollComponent  implements OnInit {
           label1: 'NOVO',
           label2: 'TREINO',
           subtitle: '',
-          icon: 'add-outline',
+          icon: '../../../assets/icon/add-outline.svg',
         },
       ]
     },
@@ -81,7 +81,7 @@ export class HorizontalScrollComponent  implements OnInit {
     {
       title: 'CONTEÚDOS',
       is_new: false,
-      icon: 'add-outline',
+      icon: '../../../assets/icon/add-outline.svg',
       type: 'blog',
       options: [
         {

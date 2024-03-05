@@ -1,7 +1,7 @@
 <ion-grid class="scroll-grid" *ngFor="let card of data">
   <ion-row>
     {{ card.title }}
-    <ion-icon *ngIf="!card.is_new && card.type != 'blog'" name="{{ card.icon }}" class="title-icon"></ion-icon>
+    <ion-icon *ngIf="!card.is_new && card.type != 'blog'" src="{{ card.icon }}" class="title-icon"></ion-icon>
     <ion-badge *ngIf="card.is_new && card.type != 'blog'" class="new-badge">NOVO</ion-badge>
   </ion-row>
   <ion-row class="scroll">
@@ -9,7 +9,7 @@
       <ion-card class="muscle-card">
         <img alt="Musculação" class="card-img" src="{{ option.image_url }}" />
           <h3 class="overflow-title" *ngIf="card.type != 'programs'" [ngStyle]="{background: option.last_opened ? '#00000082' : '#000000b3'}">
-              <ion-icon *ngIf="card.type != 'blog'" name="{{ option.icon }}" class="add-icon"></ion-icon>
+              <ion-icon *ngIf="card.type != 'blog'" src="{{ option.icon }}" class="add-icon"></ion-icon>
               {{ option.label1 }}<br/>{{ option.label2 }}
           </h3>
           <h3 class="overflow-title" *ngIf="card.type == 'programs'" style="align-items: end; justify-content: start;">
